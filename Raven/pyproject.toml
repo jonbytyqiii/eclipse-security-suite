@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raven-protocol"
+version = "6.0.0"
+description = "Raven Protocol v6.0 - Remote Administration and Messaging Framework"
+readme = "README.md"
+authors = [
+    { name = "Jon Bytyqi" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+dependencies = [] # Pure standard library, no external third-party dependencies required
+
+[project.scripts]
+# Map your command line shortcut directly to the server start loop
+raven-nest = "raven_server:start_raven_nest"
+
+[tool.setuptools]
+# Explicitly tell setuptools to only package the server module
+py-modules = ["raven_server"]

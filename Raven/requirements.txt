@@ -1,0 +1,15 @@
+# ====================================================================
+# RAVEN PROTOCOL v6.0 - CORE CONFIGURATION REQUIREMENTS
+# ====================================================================
+# This component utilizes pure Python standard library modules.
+# No external third-party pip packaging dependencies are required.
+#
+# Target Execution Runtime:
+# - Python >= 3.10
+#
+# Native Core Libraries Utilized:
+# - socket (Low-level TCP stream networking)
+# - threading (Concurrent session management & background worker pools)
+# - subprocess (Native terminal execution wrappers)
+# - os / sys (File system mechanics & environment interaction)
+# - platform / ctypes (Cross-platform privilege and OS architecture discovery)

@@ -1,0 +1,25 @@
+# =========================================================================
+# RedDevil v3.0 - Configuration Template
+# Copy this file to 'config.yaml' and tweak values for your system.
+# =========================================================================
+
+tool:
+  name: "RedDevil"
+  version: "3.0"
+  author: "Jon Bytyqi"
+
+performance:
+  chunk_size: 200000        # Lines processed per distributed worker block
+  max_workers: 0            # 0 = Automatically utilize all available CPU threads
+  enable_gpu: false         # Toggle hardware acceleration hooks
+
+database:
+  session_db: "core/sessions.db"
+
+rulesets:
+  leetspeak:
+    'a': '4'
+    'e': '3'
+    'i': '1'
+    'o': '0'
+    's': '5'

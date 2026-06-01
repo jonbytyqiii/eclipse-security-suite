@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "breachdeck-relay"
+version = "1.0.0"
+description = "BreachDeck - Authentication Relay & Network Sniffer Suite"
+readme = "README.md"
+authors = [
+    { name = "Jon Bytyqi" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "PyYAML"
+]
+
+[project.scripts]
+# Map a unique global shortcut command directly to your launcher entry function
+breachdeck = "breachdeck_launcher:main"
+
+[tool.setuptools]
+# Packages the main entry components cleanly and registers your sub-modules directory
+py-modules = ["interceptor", "breachdeck_launcher"]
+packages = ["modules"]

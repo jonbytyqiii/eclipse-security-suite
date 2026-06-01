@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dexter-analyst"
+version = "1.0.0"
+description = "Dexter - Automated Malware Forensics & Memory Analysis Engine"
+readme = "README.md"
+authors = [
+    { name = "Jon Bytyqi" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+dependencies = [] # Handled by your requirements.txt
+
+[project.scripts]
+# Map a clean, unique system terminal command shortcut directly to the launcher
+dexter = "dexter_launcher:main"
+
+[tool.setuptools]
+# Packages the core runtime components and ignores local reports directory storage
+py-modules = ["dexter", "dexter_launcher"]

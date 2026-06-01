@@ -1,0 +1,3 @@
+# EagleEye Standalone Operational Dependencies
+scapy>=2.5.0
+tqdm>=4.66.0

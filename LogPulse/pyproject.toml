@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logpulse"
+version = "1.0.0"
+description = "LogPulse: High-Performance Forensic SIEM Event Correlation Engine"
+readme = "README.md"
+authors = [
+    { name = "Jon Bytyqi" }
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+]
+dependencies = [
+    "rich>=13.7.0",
+    "pyyaml>=6.0.1"
+]
+
+[project.scripts]
+logpulse = "logpulse.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

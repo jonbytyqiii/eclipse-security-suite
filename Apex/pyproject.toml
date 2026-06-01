@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apex-auditor"
+version = "1.0.0"
+description = "Apex - Remote Linux Post-Exploitation & Forensic Auditor"
+readme = "README.md"
+authors = [
+    { name = "Jon Bytyqi" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "rich"
+]
+
+[project.scripts]
+# Pointing specifically to the unique apex launcher script file entry point
+apex-listener = "apex_launcher:main"
+
+[tool.setuptools]
+# Package the uniquely named launcher module alongside your listener logic
+py-modules = ["listener", "apex_launcher"]

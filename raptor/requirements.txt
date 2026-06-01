@@ -1,0 +1,2 @@
+# Vortex Raptor Standalone Operational Dependencies
+rich>=13.7.0

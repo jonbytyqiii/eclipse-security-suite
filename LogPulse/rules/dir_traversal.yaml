@@ -1,0 +1,12 @@
+rule_id: "LP-002"
+title: "Web Directory Traversal Attempt Blocked"
+description: "Detects path injection character strings within application routing targets."
+severity: "HIGH"
+mitre_attack:
+  tactic: "Initial Access"
+  technique: "T1190"
+  subtechnique: ""
+condition:
+  field: "raw_message"
+  match: "(..\\/|..\\\\|%2e%2e%2f)"
+  type: "regex"

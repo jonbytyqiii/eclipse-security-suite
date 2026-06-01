@@ -1,0 +1,7 @@
+typer>=0.9.0
+rich>=13.0.0
+PyYAML>=6.0
+numba>=0.58.0
+numpy>=1.24.0
+bcrypt>=4.0.1
+argon2-cffi>=23.1.0

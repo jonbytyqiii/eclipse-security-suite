@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aethereye-osint"
+version = "9.5.0"
+description = "AetherEye OSINT Suite - Infrastructure and Intelligence Reconnaissance Framework"
+readme = "README.md"
+authors = [
+    { name = "Jon Bytyqi" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "PyYAML",   # <-- Changed from "yaml" to "PyYAML"
+    "rich"
+]
+
+[project.scripts]
+aethereye = "launcher:main"
+
+[tool.setuptools]
+py-modules = ["core", "launcher"]
+packages = ["modules"]

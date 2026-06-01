@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docksentry"
+version = "2.0.0"
+description = "An Enterprise-Grade Cloud Native & Container Security Posture Management (CSPM) Platform."
+readme = "README.md"
+authors = [{ name = "Jon Bytyqi" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Security"
+]
+dependencies = [
+    "rich>=13.0.0",
+    "pyyaml>=6.0",
+    "docker>=6.1.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0",
+    "reportlab>=4.0.0",
+    "jinja2>=3.1.0",
+    "aiohttp>=3.8.0",
+    "pydantic>=2.0"
+]
+
+[project.scripts]
+docksentry = "docksentry.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ENSURES THAT NON-PYTHON CONFIG ASSETS (LIKE RULES.YAML) ARE INCLUDED IN THE PACKAGE
+[tool.setuptools.package-data]
+"docksentry.core" = ["*.yaml"]

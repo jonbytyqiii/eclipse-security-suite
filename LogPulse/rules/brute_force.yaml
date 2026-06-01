@@ -1,0 +1,14 @@
+rule_id: "LP-001"
+title: "Asynchronous Authentication Brute Force Detected"
+description: "Identifies multiple contiguous failed authentication routines across an evaluation window."
+severity: "HIGH"
+mitre_attack:
+  tactic: "Credential Access"
+  technique: "T1110"
+  subtechnique: "T1110.001"
+condition:
+  field: "event_type"
+  match: "auth_failure"
+  type: "threshold"
+  window: 10
+  threshold: 3

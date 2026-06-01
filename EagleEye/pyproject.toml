@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eagleeye"
+version = "5.4.0"
+description = "Tactical Network Reconnaissance & Asset Discovery Framework [God-Tier Edition]"
+readme = "README.md"
+authors = [{ name = "Jon Bytyqi" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Security"
+]
+dependencies = [
+    "scapy>=2.5.0",
+    "tqdm>=4.66.0"
+]
+
+[project.scripts]
+eagleeye = "eagleeye.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

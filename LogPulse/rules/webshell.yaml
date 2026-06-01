@@ -1,0 +1,12 @@
+rule_id: "LP-003"
+title: "Suspicious WebShell Execution Footprint"
+description: "Flags execution context strings mapping back to web root runtime environments."
+severity: "CRITICAL"
+mitre_attack:
+  tactic: "Persistence"
+  technique: "T1505"
+  subtechnique: "T1505.003"
+condition:
+  field: "raw_message"
+  match: "(whoami|cmd.exe|/bin/sh|passthru|shell_exec|eval)"
+  type: "regex"

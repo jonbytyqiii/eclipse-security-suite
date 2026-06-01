@@ -1,0 +1,12 @@
+rule_id: "LP-004"
+title: "Privilege Escalation Vector Execution Anomaly"
+description: "Triggers when local administrative mutation patterns execute unexpectedly."
+severity: "CRITICAL"
+mitre_attack:
+  tactic: "Privilege Escalation"
+  technique: "T1068"
+  subtechnique: ""
+condition:
+  field: "raw_message"
+  match: "(sudo -l|chmod +s|setuid|getcap)"
+  type: "regex"

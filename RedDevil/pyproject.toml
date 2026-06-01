@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reddevil"
+version = "3.0.0"
+description = "ShatterEngine (RedDevil): Modular Cryptographic Forensic & Password Policy Evaluation Framework"
+readme = "README.md"
+authors = [
+    { name = "Jon Bytyqi" }
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+    "pyyaml>=6.0.1",
+    "bcrypt>=4.1.0",
+    "argon2-cffi>=23.1.0"
+]
+
+[project.scripts]
+reddevil = "reddevil.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
