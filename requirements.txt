@@ -1,0 +1,12 @@
+-e .
+-e ./AetherEye
+-e ./Apex
+-e ./BreachDeck
+-e ./dexter
+-e ./DockSentry
+-e ./EagleEye
+-e ./LogPulse
+-e ./raptor
+-e ./Raven
+-e ./titanbrute
+rich>=13.7.1
