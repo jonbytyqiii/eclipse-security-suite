@@ -1,166 +1,275 @@
-# 🌌 Project Eclipse: Advanced Multi-Engine Cybersecurity Suite
+# 🌌 Eclipse Security Suite
 
-> **An integrated toolkit containing professional-grade Python sub-frameworks engineered for static forensics, protocol analysis, vulnerability auditing, telemetry tracking, and infrastructure security research.**
+> **A Modular Purple Team Cybersecurity Ecosystem**
+> Combining OSINT, Network Reconnaissance, Threat Hunting, Defensive Monitoring, Forensics, Vulnerability Analysis, and Infrastructure Auditing into one unified Python framework.
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 ---
 
-# 🏗️ Ecosystem Architectural Layout
+# 🏗️ Project Overview
 
-Project Eclipse functions as a unified cybersecurity operations ecosystem. Each framework inside the repository is fully self-contained with its own isolated packaging definitions (`pyproject.toml`) and globally deployable launcher mappings.
+**Eclipse Security Suite** is an integrated multi-engine cybersecurity platform engineered for:
 
-The suite is orchestrated interactively through the master controller interface:
+* Security researchers
+* Purple team operators
+* Red team labs
+* Blue team monitoring
+* DevSecOps practitioners
+* Malware analysts
+* Security students and academy environments
 
-```text id="3mzn7k"
-eclipse.py
+The ecosystem combines multiple professional-grade Python sub-frameworks into a centralized orchestration environment powered by the master launcher:
+
+```text
+eclipse
 ```
 
+Each framework remains independently deployable while also integrating seamlessly into the broader Eclipse ecosystem.
+
 ---
 
-## 📁 Repository Structure
+# ⚡ Core Ecosystem Capabilities
 
-```text id="c4a8yt"
-eclipse/
+* Modular multi-tool architecture
+* Cross-platform deployment support
+* Global CLI launcher aliases
+* Interactive terminal dashboards (TUI)
+* Defensive and offensive research tooling
+* Centralized ecosystem orchestration
+* Standalone framework isolation
+* Shared telemetry and wordlist infrastructure
+* Research-grade packet and protocol analysis
+* SIEM normalization and threat detection
+* Container security auditing
+* Web vulnerability assessment
+* Network reconnaissance and OSINT collection
+
+---
+
+# 📁 Ecosystem Architecture & Repository Layout
+
+```text
+eclipse-security-suite/
 │
-├── pyproject.toml          # Master package setup mapping configurations
-├── requirements.txt        # Universal cascading installation driver
-├── LICENSE                 # MIT open-source distribution parameters
-├── eclipse.py              # Central TUI orchestrator and control panel
-├── README.md               # Master ecosystem documentation matrix
-├── logs/                   # Global engine tracking logs
-├── wordlists/              # Shared auditing and testing wordlists
+├── pyproject.toml          # Master package configuration
+├── requirements.txt        # Global dependency manifest
+├── LICENSE                 # MIT licensing terms
+├── eclipse.py              # Master ecosystem TUI launcher
+├── README.md               # Ecosystem documentation
 │
-├───AetherEye/              # OSINT, Geolocation & Shodan Audit Infrastructure
-├───Apex/                   # Asynchronous Decoupled Socket Audit Framework
-├───BreachDeck/             # Dragon Interceptor LAN Broadcast Analyzer
-├───dexter/                 # Static Forensics & Malware Triage Engine
-├───DockSentry/             # Container Security & Kubernetes Auditor
-├───EagleEye/               # Network Reconnaissance & Asset Discovery
-├───LogPulse/               # SIEM Normalize-Detect-Alert Engine
-├───raptor/                 # Web & Endpoint Vulnerability Analysis Engine
-├───Raven/                  # Stateful Session Administration Framework
-└───titanbrute/             # Multi-Protocol Service Auditing Suite
+├── logs/                   # Centralized telemetry & audit logs
+├── wordlists/              # Shared wordlists & payload repositories
+├── config.example.yaml     # Global configuration template
+│
+├── AetherEye/              # OSINT & Infrastructure Intelligence
+├── Apex/                   # Linux Privilege & Posture Auditor
+├── BreachDeck/             # Dragon Interceptor LAN Analyzer
+├── dexter/                 # Malware & Static Forensics Engine
+├── DockSentry/             # Docker & Kubernetes Auditor
+├── EagleEye/               # Network Recon & Enumeration
+├── LogPulse/               # SIEM & Threat Hunting Platform
+├── raptor/                 # Web Vulnerability Scanner
+├── Raven/                  # Stateful Session Framework
+└── titanbrute/             # Multi-Protocol Authentication Auditor
 ```
 
 ---
 
-# 🛠️ The Sub-Tool Matrix
+# 🛠️ The Framework Matrix
 
-| Sub-Tool Project | Core Operational Domain                           | Global Shortcut Alias |
-| ---------------- | ------------------------------------------------- | --------------------- |
-| `AetherEye`      | OSINT, Image Forensics & Infrastructure Scanning  | `aethereye`           |
-| `Apex`           | Asynchronous Decoupled Agent Architecture         | `apex-listener`       |
-| `BreachDeck`     | Link-Local Packet Sniffing & Structural Parsing   | `breachdeck`          |
-| `dexter`         | Deep Static Forensic Analysis & Risk Modeling     | `dexter`              |
-| `DockSentry`     | DevSecOps Infrastructure Auditing                 | `docksentry`          |
-| `EagleEye`       | Network Discovery & Asset Enumeration             | `eagleeye`            |
-| `LogPulse`       | SIEM Normalization & Threat Hunting               | `logpulse`            |
-| `raptor`         | Web Application & Endpoint Vulnerability Analysis | `raptor`              |
-| `Raven`          | Custom TCP Stateful Session Administration        | `raven-nest`          |
-| `titanbrute`     | Multi-Protocol Service Verification               | `titanbrute`          |
-
----
-
-# 🚀 Installation & Universal Deployment
-
-Project Eclipse utilizes modern Python packaging standards to provide globally accessible command-line tooling while preserving clean and modular source layouts.
+| Framework      | Operational Domain         | Description                                                              | Global Alias |
+| -------------- | -------------------------- | ------------------------------------------------------------------------ | ------------ |
+| **AetherEye**  | OSINT & Recon              | Email hunting, geolocation, Shodan auditing, infrastructure intelligence | `aethereye`  |
+| **EagleEye**   | Network Recon              | Network discovery and asset enumeration                                  | `eagleeye`   |
+| **Raven**      | Stateful Session Framework | Custom TCP remote administration & session orchestration                 | `raven-nest` |
+| **LogPulse**   | SIEM & Threat Detection    | Log normalization, detection pipelines, telemetry analysis               | `logpulse`   |
+| **TitanBrute** | Protocol Auditing          | Multi-protocol authentication verification framework                     | `titanbrute` |
+| **DockSentry** | Container Security         | Docker, Kubernetes, and DevSecOps auditing                               | `docksentry` |
+| **Apex**       | System Auditing            | Linux posture validation & privilege auditing                            | `apex`       |
+| **dexter**     | Digital Forensics          | Static PE analysis & malware triage                                      | `dexter`     |
+| **raptor**     | Web Security               | Web application & endpoint vulnerability analysis                        | `raptor`     |
+| **BreachDeck** | Packet Analysis            | LAN broadcast interception & protocol telemetry                          | `breachdeck` |
 
 ---
 
-## 📋 Full Ecosystem Installation (One Command)
+# 🚀 Installation & Deployment
 
-To compile the full suite along with all shared dependencies and universal shell shortcuts, navigate into the root project directory and execute:
+Eclipse utilizes modern Python packaging standards to provide globally accessible command-line tooling while preserving clean modular source layouts.
 
-```bash id="8o6dva"
-python -m pip install -r requirements.txt
+---
+
+## 📦 1. Clone the Repository
+
+```bash
+git clone https://github.com/jonbytyqiii/eclipse-security-suite.git
+
+cd eclipse-security-suite
 ```
 
-This single command registers:
+---
 
-* The `eclipse` master controller interface
-* All underlying framework command aliases
-* Shared dependency environments
+## ⚙️ 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🌌 3. Install the Ecosystem Launcher
+
+```bash
+pip install -e .
+```
+
+This registers:
+
+* The global `eclipse` launcher
+* All framework CLI aliases
+* Shared ecosystem dependencies
 * Cross-project utility modules
 
 ---
 
-## 🎯 Standalone Individual Module Installation
+# 💻 Running the Ecosystem
 
-If you prefer to deploy only a single framework independently, navigate directly into the desired sub-project directory and install it locally using editable developer mode.
+Launch the master orchestration dashboard globally from any terminal session:
 
-Example:
-
-```bash id="e4w2rn"
-cd dexter
-python -m pip install -e .
-```
-
----
-
-# 💻 Running the Master Hub Console
-
-Once installation completes successfully, boot the main ecosystem orchestration dashboard globally from any terminal session:
-
-```bash id="x9u1fd"
+```bash
 eclipse
 ```
 
 ---
 
-# ⚡ Ecosystem Engineering Objectives
+## 🎯 Running Individual Frameworks
 
-Project Eclipse was engineered around the following design principles:
+Each module can also operate independently.
 
-* Modular isolated framework architecture
-* Cross-platform compatibility
-* Defensive-first operational tooling
-* High-visibility telemetry rendering
-* Portable deployment structures
-* Shared ecosystem interoperability
-* Research-grade laboratory flexibility
-* Structured terminal-driven workflows
+Examples:
+
+```bash
+aethereye
+```
+
+```bash
+logpulse
+```
+
+```bash
+docksentry
+```
+
+```bash
+breachdeck
+```
+
+```bash
+raven-nest
+```
 
 ---
 
-# 🔒 Security Alignment & Compliance Matrix
+# 📖 Operational Philosophy
 
-Every framework included within Project Eclipse has been developed explicitly for:
+Project Eclipse follows a distributed modular architecture:
+
+* Every framework remains standalone and independently deployable
+* Shared ecosystem assets remain centralized
+* Global aliases reduce operational friction
+* TUI-based orchestration improves usability
+* Cross-project interoperability remains optional
+* Defensive and offensive tooling coexist in isolated boundaries
+
+This enables deployment flexibility across:
+
+* Research labs
+* Cybersecurity academies
+* Isolated sandbox environments
+* Portable analyst workstations
+* Defensive monitoring infrastructures
+
+---
+
+# 🔒 Security Alignment & Compliance
+
+This ecosystem was engineered explicitly for:
 
 * Authorized infrastructure security assessments
 * Defensive engineering workflows
+* Threat hunting and telemetry analysis
 * Incident response laboratories
-* Security academy simulations
-* Protocol research environments
-* Malware analysis sandboxes
+* Malware analysis research
+* Academic cybersecurity environments
 * Systems programming education
-* Telemetry and infrastructure auditing
-
-Operators are responsible for ensuring explicit authorization boundaries exist prior to initializing active routines or deploying tooling within live environments.
-
-Unauthorized execution against systems without permission may violate local, regional, or international cybersecurity laws and regulations.
+* Purple team simulations
 
 ---
 
-# 📦 Ecosystem Deployment Philosophy
+# ⚠️ Important Legal Notice
 
-Project Eclipse follows a distributed modular philosophy:
+This toolkit is intended strictly for:
 
-* Each framework remains independently deployable
-* Every module contains isolated dependency mappings
-* Global launcher aliases minimize execution friction
-* Shared wordlists and telemetry structures remain centralized
-* Core orchestration logic is abstracted into the Eclipse master controller
+* Educational purposes
+* Authorized security testing
+* Research and laboratory simulations
+* Defensive infrastructure auditing
 
-This architecture enables flexible deployment across isolated lab environments, portable workstations, and segmented research infrastructures.
+Unauthorized usage against systems without explicit permission may violate local, regional, or international cybersecurity laws and regulations.
+
+Certain modules — particularly authentication auditing, packet interception, or active reconnaissance engines — may generate detectable network activity or violate acceptable-use policies if deployed improperly.
+
+Always ensure proper authorization boundaries exist before testing live environments.
 
 ---
 
-# 📄 Licensing Terms
+# ⚡ Ecosystem Engineering Goals
+
+Project Eclipse was designed around the following engineering principles:
+
+* High modularity
+* Stability-first architecture
+* Research-grade extensibility
+* Defensive operational visibility
+* Portable deployment models
+* Structured asynchronous workflows
+* Clean Python package isolation
+* Cross-platform compatibility
+* Operator-focused terminal rendering
+
+---
+
+# 📊 Supported Operational Domains
+
+| Domain                                | Coverage |
+| ------------------------------------- | -------- |
+| OSINT & Intelligence Gathering        | ✅        |
+| Network Reconnaissance                | ✅        |
+| SIEM & Threat Detection               | ✅        |
+| Container Security Auditing           | ✅        |
+| Vulnerability Assessment              | ✅        |
+| Malware Triage & Forensics            | ✅        |
+| Authentication Auditing               | ✅        |
+| Protocol Visibility & Packet Analysis | ✅        |
+| Infrastructure Telemetry              | ✅        |
+| Security Research & Education         | ✅        |
+
+---
+
+# 📄 License
 
 Distributed under the terms and conditions of the MIT License.
 
+See the `LICENSE` file for complete licensing information.
+
 ---
 
-# 👤 Ecosystem Project Lead
+# 👤 Author
 
 **Jon Bytyqi**
-Project Eclipse Systems Engineering Portfolio Suite — Core Master Build v1.0.0
+
+Project Eclipse — Advanced Multi-Engine Cybersecurity Framework
+Core Ecosystem Build v1.0.0
