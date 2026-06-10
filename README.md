@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="logo.png" alt="Eclipse Security Suite" width="100%" />
+</div>
+
+<br>
+
 # 🌌 Eclipse Security Suite
 
 > **A Modular Purple Team Cybersecurity Ecosystem**
