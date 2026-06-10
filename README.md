@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="Eclipse Security Suite" width="100%" />
+  <img src="eclipse-logo.jpg" alt="Eclipse Security Suite" width="100%" />
 </div>
 
 <br>
